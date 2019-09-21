@@ -15,5 +15,6 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-  contacts.delete_if{|k, v| v = "strawberry"}
+  contacts.each do |person, contact_details_hash|
+  binding.pry
 end
